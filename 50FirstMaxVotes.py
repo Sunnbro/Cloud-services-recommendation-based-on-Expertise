@@ -5,6 +5,15 @@ import json
 with open('Software_Complet_Propre.json', 'r', encoding='utf-8') as file:
     data = json.load(file)
 
+total_objects = len(data)
+
+print("Nombre total d'objets :", total_objects)
+
+count_with_vote = sum(1 for obj in data if "vote" in obj)
+
+print("Nombre d'objets contenant 'vote' :", count_with_vote)
+x = count_with_vote/total_objects
+print("ratio :",x)
 # Initialiser un dictionnaire pour stocker les votes par Asin
 votes_par_asin = {}
 
