@@ -1,0 +1,8 @@
+pip install nltk spacy
+python -m spacy download en_core_web_sm
+pip install scikit-learn
+pip install transformers
+pip3 install torch torchvision torchaudio
+pip install readability
+pip install taaled
+pip install pylats
